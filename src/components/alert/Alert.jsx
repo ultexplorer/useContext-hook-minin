@@ -7,8 +7,8 @@ const Alert = () => {
   if (!alert.visible) return null;
 
   return (
-    <div onClick={alert.toggle} className="alert alert-danger">
-      Это очень важное сообщение!
+    <div onClick={alert.hide} className="alert alert-danger">
+      {alert.text}
     </div>
   );
 };
